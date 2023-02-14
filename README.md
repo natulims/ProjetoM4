@@ -23,4 +23,6 @@ Preço - UTILIZA o campo DOUBLE ou DOUBLE PRECISION
 
 3. Como essas entidades estão relacionadas?
 
-Primeiro foi feito a entidade curso como base para o diagrama e nela possui 
+Primeiro foi feito a entidade curso como base para o diagrama e nela possui Nome, carga horaria, requisito e preço. Requisito é o que o aluno necessita para poder fazer aquele curso, a carga horária o tempo do curso e por ultimo o valor do curso.
+Depois de ter feito o curso foi criada as entidades instrutores, matriculas, alunos e turmas, e existe uma relação entre turmas e matriculas, sendo assim, só podendo haver vagas para novas matriculas se tiver turmas disponiveis, e dentro dessa entidade tem uma relação com alunos porque para se ter uma matricula e necessario ter alunos.
+E por ultimo nas entidades turmas e cursos utilizei o campo em comum carga_Hr, porque a carga horaria de um curso pode variar e isso pode prejudicar os dados ao se fazer um relatorio.
